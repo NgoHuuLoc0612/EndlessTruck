@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<title>Endless Truck</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="manifest" href="manifest.json">
+
+<style type="text/css">
+
+body {
+	padding:0;
+	border:0;
+	margin: 0px;
+	background-color: #023;
+  }
+
+.WebGLDIV {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	width:100vw;
+	height:100vh;
+  }
+
+</style>
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script src="game-interface.js?gameId=endless-truck"></script>
+
+<script>
+	var IntegrationType = "FAMOBI";
+    window.GameInterface.init(["js/gl-matrix-min.js", "js/compressed.js"]).then(result => {DLG_WebGLStart()});
+  </script>
+</head>
+
+<body onload="">
+<input autocapitalize="off" autocorrect="off" type="url" id="dlg-textfield"type="text" name="lastname" style="margin:0px; position: absolute; top:-50px;" value="Hello" onblur="try{TextField_Selected = -1;}catch(e){}">
+
+<canvas class="WebGLDIV" id="dlg-webgl-canvas" ></canvas>
+</body>
+
+</html>
+
+
