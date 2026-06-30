@@ -3833,9 +3833,8 @@
                     return new Promise(function (t, n) {
                       e.helpers
                         .loadFiles([
-                          "//assets.msn.com/staticsb/statics/latest/msstart-games-sdk/msstart-v1.0.0-rc.19.min.js",
-                          "//games.cdn.famobi.com/scripts/microsoft-start/migrateStorage.js?v=" +
-                            e.helpers.getCacheKey(),
+                          "msstart-v1.0.0-rc.19.min.js",
+                          "migrateStorage.js?v=" + e.helpers.getCacheKey(),
                         ])
                         .then(function () {
                           ((e.ads.adInstances = {
